@@ -11,4 +11,8 @@
   <div class="form-group">
     <%= f.button icon('flag-checkered', 'Start'), class: 'btn btn-md btn-default' %>
   </div>
+
+  <div class="form-group">
+    <%= link_to icon('bolt', 'Batch'), '#', class: 'btn btn-md btn-primary', data: {toggle: 'modal', target: '#batch_scans_modal'} %>
+  </div>
 <% end %>

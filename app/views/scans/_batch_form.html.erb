@@ -1,0 +1,3 @@
+<%= form_for @scans, url: scans_path, remote: true do |f| %>
+  <%= render partial: 'batch_fields', collection: @scans, as: :scan, locals: {f: f} %>
+<% end %>

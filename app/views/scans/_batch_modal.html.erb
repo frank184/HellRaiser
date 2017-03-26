@@ -1,0 +1,18 @@
+<div id="batch_scans_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><%= icon 'times' %></button>
+        <h4 class="modal-title">Batch Create Scans</h4>
+      </div>
+      <div class="modal-body container-fluid">
+        <%= render 'batch_form' %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success pull-left"><%= icon 'plus', 'Add Scan' %></button>
+        <button type="button" class="btn btn-primary" onclick="$('#new_scan').submit()"><%= icon 'bolt', 'Submit' %></button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
